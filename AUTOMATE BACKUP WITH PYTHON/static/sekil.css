@@ -1,0 +1,35 @@
+.budy{
+    background-color: #282c34;
+    color: rgb(167, 212, 255);
+    justify-content: center;
+    text-align: center;  
+    align-items: center;
+    box-shadow: 0 15px 15px 0 rgba(7, 250, 238, 0.2), 0 6px 20px 0 #05d3ee30;  
+    width: 1000px;
+    height: 850px;
+    margin-left: 400px;
+    margin-top: 50px;
+   
+}
+.box{
+    margin-top: 2%;
+    margin-right: 5%;
+    justify-content: center;
+    text-align: center;  
+    align-items: center;
+}
+.inp{
+    box-shadow: 0 15px 15px 0 rgba(7, 250, 238, 0.2), 0 6px 20px 0 #05d3ee30;
+    border-radius: 20%;
+    padding: 2%;
+    margin-left: 42px;
+    margin-right: 25px;
+
+}
+.inpto{
+    box-shadow: 0 15px 15px 0 rgba(7, 250, 238, 0.2), 0 6px 20px 0 #05d3ee30;
+    border-radius: 20%;
+    padding: 2%;
+    margin-left: 70px;
+    margin-right: 5px;
+}
