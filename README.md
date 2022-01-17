@@ -1,2 +1,2 @@
 # Flask-Web-Automate-Backup-with-Python-Script
-mala.zip'i zipten çıkarmayı unutmayın. Sonrasında yapmanız gereken consola py main.py yazmak olacaktır.
+Dosyada bulunan zip'i main.py'ın yanına çıkarmayı unutmayın. Sonrasında yapmanız gereken consola py main.py yazmak olacaktır.
