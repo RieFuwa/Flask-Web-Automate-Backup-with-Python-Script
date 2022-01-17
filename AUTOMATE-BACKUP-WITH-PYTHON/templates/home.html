@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='sekil.css') }}">
+    <title>BACKUP</title>
+    <h1 style="font-size: 50px;padding-left: 40px;color: rgb(236, 118, 114);">AUTOMATE BACKUP WITH PYTHON</h1>
+</head>
+
+<body class="budy">
+    <h2 class="h21" >DOSYA, ZİP, BELGE YEDEKLEME</h2>
+    <form action="/backup" method="POST">
+        <p class="box" style="font-size: larger; ">&emsp;&ensp;&ensp; Dosya yolu:
+            <input
+                style="top: 0px; font-size: 18px; color: rgb(54, 98, 136); text-align: center;  width: 500px;  padding: 1%;"
+                type="text" value="" id="a" name="src_dir" placeholder="C:/Users/XXX/Desktop/" required>
+        </p>
+        <p class="box" style="font-size: larger;   ">&emsp;&emsp;&ensp;&ensp;&ensp;Dosya adi:
+            <input style=" font-size: 18px; color: rgb(54, 98, 136);width: 500px; text-align: center;      padding: 1%;"
+                type="text" value="" id="d" name="src_file_name" placeholder="AAA" required>
+        </p>
+        <p class="box" style="font-size: larger;   "> &emsp;Yeni Dosya adi:
+            <input style="font-size: 18px; color: rgb(54, 98, 136);width: 500px; text-align: center;    padding: 1%;"
+                type="text" value="" id="d" name="dst_file_name" placeholder="BBB">
+        </p>
+
+        <p class="box" style=" font-size: larger; "> Yeni Dosya yolu:
+            <input style=" font-size: 18px; color: rgb(54, 98, 136);width: 500px; text-align: center;   padding: 1%;"
+                type="text" value="" id="d" name="dst_dir" placeholder="C:/Users/XXX/Desktop/ZZ/">
+        </p>
+        <p style="font-size: larger; padding-left: 50px; ">
+            <br>
+            <input class="inp" style="margin-left: 5%;"  type="submit" value="YEDEKLE" id="d">
+            <input class="inp" type="reset" value="TEMİZLE" id="d">
+        </p>
+        <!-- <input type="file" webkitdirectory directory multiple/> -->
+        <!-- onclick="alert('başarılı bir şekilde kaydoldu');" -->
+        <br><br><br><br>
+    </form>
+    
+    <h2 class="h21">DOSYAYI ZİPLEME</h2>
+    <form action="/zip" method="POST">
+        <p class="box" style="font-size: larger; ">Dosya yolu:
+            <input
+                style="top: 0px; font-size: 18px; color: rgb(54, 98, 136); text-align: center;  width: 500px;  padding: 1%;"
+                type="text" value="" id="c" name="source_folder" placeholder="C:/Users/XXX/Desktop/XX" required>
+        </p>
+        <p class="box" style="font-size: larger; ">&emsp; Zip Yolu:
+            <input
+                style="top: 0px; font-size: 18px; color: rgb(54, 98, 136); text-align: center;  width: 500px;  padding: 1%;"
+                type="text" value="" id="c" name="target_zip" placeholder="C:/Users/XXX/Desktop/AAA.zip" required>
+        </p>
+        
+        <p>
+            <br>
+            <input class="inp" style="margin-left: 12%;" type="submit" value="ZİPLE" id="d">
+            <input class="inp" type="reset" value="TEMİZLE" id="d">
+        </p>
+
+        <br><br><br><br>
+    </form>
+    <h2 class="h21">GÜNLÜK YEDEKLEME</h2>
+    <form action="/day" method="POST">
+        <p class="box" style="font-size: larger; ">Dosya yolu:
+            <input
+                style="top: 0px; font-size: 18px; color: rgb(54, 98, 136); text-align: center;  width: 500px;  padding: 1%;"
+                type="text" value="" id="c" name="src_dir" placeholder="C:/Users/XXX/Desktop/XX" required>
+        </p>
+        <br>
+        <p>
+            <input class="inp"  style="margin-left: 12%;" type="submit" value="EKLE"
+            id="d">
+        </p>
+        
+    </form>
+     
+    <hr>
+    <h1>BEDİRHAN KABATAŞ</h1>
+</body>
